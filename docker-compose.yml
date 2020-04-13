@@ -1,0 +1,12 @@
+version: "2"
+services:
+  python361:
+    build:
+      context: ./3.6.10
+    container_name: python361
+    volumes:
+      - ${SOURCE_DIR}:/www/:rw
+    environment:
+      TZ: "$TZ"
+    restart: always
+
