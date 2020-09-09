@@ -9,10 +9,10 @@
     ```
     $ git clone https://github.com/FineYi/dnmp.git
     ```
-~~3. 如果不是`root`用户，还需将当前用户加入`docker`用户组：
+3. 如果不是`root`用户，还需将当前用户加入`docker`用户组：(此步骤视情况可选择忽略)
     ```
     $ sudo gpasswd -a ${USER} docker
-    ```~~
+    ```
 4. 拷贝并命名配置文件（Windows系统请用`copy`命令），修改配置文件，启动：
     ```
     $ cd dnmp                                           # 进入项目目录
