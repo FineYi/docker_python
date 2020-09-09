@@ -1,0 +1,26 @@
+version: "2"
+services:
+  python361:
+    build:
+      context: ./python/3.6.10
+    container_name: python361
+    volumes:
+      - ${SOURCE_DIR}:/www/:rw
+    environment:
+      TZ: "$TZ"
+    restart: always
+    stdin_open: true
+    tty: true
+
+  python27:
+    build:
+      context: ./python/2.7
+    container_name: python27
+    volumes:
+      - ${SOURCE_DIR}:/www/:rw
+    environment:
+      TZ: "$TZ"
+    restart: always
+    stdin_open: true
+    tty: true
+
