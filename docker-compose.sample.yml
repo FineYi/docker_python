@@ -12,15 +12,15 @@ services:
     stdin_open: true
     tty: true
 
-  python27:
-    build:
-      context: ./python/2.7
-    container_name: python27
-    volumes:
-      - ${SOURCE_DIR}:/www/:rw
-    environment:
-      TZ: "$TZ"
-    restart: always
-    stdin_open: true
-    tty: true
+  # python27:
+  #   build:
+  #     context: ./python/2.7
+  #   container_name: python27
+  #   volumes:
+  #     - ${SOURCE_DIR}:/www/:rw
+  #   environment:
+  #     TZ: "$TZ"
+  #   restart: always
+  #   stdin_open: true
+  #   tty: true
 
