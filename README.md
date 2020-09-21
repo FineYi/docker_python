@@ -7,15 +7,16 @@
     - `docker-compose 1.7.0+`
 2. `clone`项目：
     ```
-    $ git https://github.com/FineYi/docker_python.git
+    $ git clone https://github.com/fineYi/docker_python.git
     ```
-3. 如果不是`root`用户，还需将当前用户加入`docker`用户组：(此步骤视情况可选择忽略)
+3. 如果不是`root`用户，还需将当前用户加入`docker`用户组：
     ```
     $ sudo gpasswd -a ${USER} docker
+    $ 若上述命令执行失败，可以手动切换root用户后，再执行后续操作
     ```
 4. 拷贝并命名配置文件（Windows系统请用`copy`命令），修改配置文件，启动：
     ```
-    $ cd docker_python                                  # 进入项目目录
+    $ cd dnmp                                           # 进入项目目录
     $ cp env.sample .env                                # 复制环境变量文件
     $ vi .env
     $ 修改 SOURCE_DIR=物理机代码的绝对路径（用来映射到容器内部）
