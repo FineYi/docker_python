@@ -11,7 +11,7 @@ RUN set -ex; \
 	\
 	pip install --upgrade pip; \
 	\
-	pip install mongo mysql redis requests mysqlclient xlwt; \
+	pip install mongo mysql redis requests mysqlclient xlwt kafka; \
 	\
 	pip install -i https://pypi.tuna.tsinghua.edu.cn/simple apache-airflow; \
 	\
