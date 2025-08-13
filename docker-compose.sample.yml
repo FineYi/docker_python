@@ -1,4 +1,4 @@
-version: "2"
+# version: "2"
 services:
   python361:
     build:
@@ -24,3 +24,16 @@ services:
   #   stdin_open: true
   #   tty: true
 
+  python3921:
+    build:
+      context: ./python/3.9.21
+    container_name: python3921
+    ports:
+      - "8088:8088"
+    volumes:
+      - ${SOURCE_DIR}:/www/:rw
+    environment:
+      TZ: "$TZ"
+    restart: always
+    stdin_open: true
+    tty: true
